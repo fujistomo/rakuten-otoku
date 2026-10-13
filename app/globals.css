@@ -1,0 +1,208 @@
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5c6b7a;
+  --accent: #bf0000;
+  --accent-soft: #ffebee;
+  --border: #e5e7eb;
+  --ok: #0d9488;
+  --warn: #d97706;
+  --ended: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    Meiryo, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--accent);
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.updated {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.note {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.badge.ongoing {
+  background: #ccfbf1;
+  color: var(--ok);
+}
+
+.badge.upcoming {
+  background: #fef3c7;
+  color: var(--warn);
+}
+
+.badge.ended,
+.badge.recurring {
+  background: #f3f4f6;
+  color: var(--ended);
+}
+
+.summary {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0.75rem;
+  color: #333;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.filter-btn {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

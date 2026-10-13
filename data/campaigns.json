@@ -1,0 +1,74 @@
+{
+  "updatedAt": "2026-10-13T18:00:00+09:00",
+  "sourceNote": "公式ページ（event.rakuten.co.jp 等）を基に手動整理。アフィリエイトリンクなし。",
+  "campaigns": [
+    {
+      "id": "marathon-20261014",
+      "title": "お買い物マラソン",
+      "status": "upcoming",
+      "start": "2026-10-14T20:00:00+09:00",
+      "end": "2026-10-17T09:59:00+09:00",
+      "entryStart": "2026-10-12T10:00:00+09:00",
+      "entryEnd": "2026-10-17T09:59:00+09:00",
+      "summary": "エントリー＆ショップ買いまわりでポイント最大10倍（SPU併用で最大47.5倍）。1ショップ1,000円(税込)以上が対象。獲得上限7,000ポイント（期間限定）。",
+      "officialUrl": "https://event.rakuten.co.jp/campaign/point-up/marathon/",
+      "tags": ["ポイントアップ", "買いまわり", "毎月開催"],
+      "priority": 1
+    },
+    {
+      "id": "spu",
+      "title": "スーパーポイントアッププログラム（SPU）",
+      "status": "ongoing",
+      "start": null,
+      "end": null,
+      "summary": "楽天カード・楽天モバイル・楽天銀行など対象サービスを利用すると、楽天市場でのお買い物ポイント倍率がアップ（最大18.5倍前後）。条件達成で毎月ポイントアップ。",
+      "officialUrl": "https://event.rakuten.co.jp/campaign/point-up/everyday/point/",
+      "tags": ["常時", "ポイントアップ", "SPU"],
+      "priority": 2
+    },
+    {
+      "id": "5and0",
+      "title": "5と0のつく日",
+      "status": "recurring",
+      "start": null,
+      "end": null,
+      "summary": "毎月5・10・15・20・25・30日（または翌48時間）にポイントアップやクーポンが強化される日。お買い物マラソンやカード決済と重なると特にお得。",
+      "officialUrl": "https://event.rakuten.co.jp/",
+      "tags": ["毎月", "ポイントアップ"],
+      "priority": 3
+    },
+    {
+      "id": "genre-festival",
+      "title": "ジャンル祭",
+      "status": "ended",
+      "start": "2026-10-04T20:00:00+09:00",
+      "end": "2026-10-09T01:59:00+09:00",
+      "summary": "ファッション・食品・日用品・家電などジャンル別のポイントアップやクーポン（最大50%OFFなど）。お買い物マラソン連動で開催。",
+      "officialUrl": "https://event.rakuten.co.jp/genre/festival/",
+      "tags": ["セール", "ジャンル別"],
+      "priority": 10
+    },
+    {
+      "id": "super-sale-next",
+      "title": "楽天スーパーSALE（次回見込み）",
+      "status": "upcoming",
+      "start": "2026-12-04T20:00:00+09:00",
+      "end": "2026-12-11T01:59:00+09:00",
+      "summary": "年数回の大型セール。ポイント最大47.5倍やクーポン配布が想定される。日程は公式発表に準拠。",
+      "officialUrl": "https://event.rakuten.co.jp/",
+      "tags": ["大型セール", "予定"],
+      "priority": 4
+    },
+    {
+      "id": "rakuten-mobile-thanks",
+      "title": "楽天モバイル 最強感謝祭関連",
+      "status": "ongoing",
+      "start": "2026-10-01T10:00:00+09:00",
+      "end": "2026-10-27T09:59:00+09:00",
+      "summary": "楽天モバイル利用者向け特典や、楽天市場ショップ公式アカウントフォローでポイント山分けなど。詳細は公式確認。",
+      "officialUrl": "https://network.mobile.rakuten.co.jp/campaign/",
+      "tags": ["楽天モバイル", "ポイント"],
+      "priority": 5
+    }
+  ]
+}
